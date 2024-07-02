@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Background</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #222; 
+        background-image: url('https://i.gifer.com/WDrB.gif'); 
+        background-size: cover;
+        background-position: center;
+        animation: animateBackground 30s linear infinite;
+    }
+
+    @keyframes animateBackground {
+        0% { background-position: 0 0; }
+        100% { background-position: 100% 100%; }
+    }
+
+    .content {
+        text-align: center;
+        color: white;
+        z-index: 1; 
+    }
+</style>
+</head>
+<body>
+    <div class="content">
+        <h1>Thank you from</h1>
+        <p>Elie Tachenko</p>
+    </div>
+</body>
+</html>
